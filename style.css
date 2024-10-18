@@ -89,6 +89,7 @@ section{
     right:20px;
     top:20px;
     z-index: 200;
+    cursor: pointer;
 }
 
 #MenuOpen{
@@ -97,6 +98,8 @@ section{
     right:20px;
     top:20px;
     z-index: 200;
+    cursor: pointer;
+
 }
 
 .intro a{
@@ -481,5 +484,8 @@ footer p{
         min-height:370px;
         border: solid 2px var(--textcolor);
         padding: 20px 0px;
+    }
+    .item img{
+        height:400px;
     }
 }
