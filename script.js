@@ -25,6 +25,7 @@ function showNav(){
     closeIcon.style.display = 'block';
     openIcon.style.display = 'none';
     nav.style.backgroundColor = currentBackground;
+    nav.style.height = "100%"
     console.log(currentBackground);
 }
 
@@ -34,5 +35,5 @@ function hideNav(){
     if(closeIcon.style.display === 'none') return
     closeIcon.style.display = 'none';
     openIcon.style.display = 'block';
-
+    nav.style.height = "0"
 }
