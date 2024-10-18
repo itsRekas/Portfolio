@@ -15,7 +15,7 @@ function changeDisplay() {
         root.style.setProperty('--textcolor', 'rgb(218, 218, 218)');
         currentBackground = 'black';
     }
-    if(nav.style.backgroundColor !== 'transparent'){
+    if((closeIcon.style.display === 'block'||openIcon.style.display === 'block') && nav.style.backgroundColor !== 'transparent'){
         nav.style.backgroundColor = currentBackground;
     }
 }
