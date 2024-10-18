@@ -315,7 +315,7 @@ section{
 
 .item img{
     width: 90%;
-    height:50%;
+    height:200px;
     border-radius: 10px;
 }
 
@@ -372,7 +372,7 @@ footer p{
         flex-direction: column;
         justify-content: start;
         gap:100px;
-        top:10px;
+        top:0;
         position: fixed;
     }
     .inner{
