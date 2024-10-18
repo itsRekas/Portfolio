@@ -4,6 +4,7 @@ const closeIcon=document.getElementById("MenuClose");
 const openIcon=document.getElementById("MenuOpen");
 const root = document.documentElement;
 let currentBackground = getComputedStyle(root).getPropertyValue('--background').trim();
+let resizeTimeout;
 
 function changeDisplay() {
     if (currentBackground === 'black') {
@@ -38,3 +39,11 @@ function hideNav(){
     openIcon.style.display = 'block';
     nav.style.height = "0"
 }
+
+
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+        location.reload();
+    }, 500);
+});
