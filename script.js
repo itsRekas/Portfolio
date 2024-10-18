@@ -21,6 +21,7 @@ function changeDisplay() {
 }
 
 function showNav(){
+    if(!(closeIcon.style.display === 'block'||openIcon.style.display === 'block'))return;
     icons.style.display = 'flex';
     closeIcon.style.display = 'block';
     openIcon.style.display = 'none';
@@ -30,6 +31,7 @@ function showNav(){
 }
 
 function hideNav(){
+    if(!(closeIcon.style.display === 'block'||openIcon.style.display === 'block'))return;
     icons.style.display = 'none';
     nav.style.backgroundColor = 'transparent';
     if(closeIcon.style.display === 'none') return
