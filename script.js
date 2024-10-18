@@ -15,23 +15,22 @@ function changeDisplay() {
         root.style.setProperty('--textcolor', 'rgb(218, 218, 218)');
         currentBackground = 'black';
     }
-    if((closeIcon.style.display === 'block'||openIcon.style.display === 'block') && nav.style.backgroundColor !== 'transparent'){
+    if((window.getComputedStyle(closeIcon).display === 'block'||window.getComputedStyle(openIcon).display === 'block') && nav.style.backgroundColor !== 'transparent'){
         nav.style.backgroundColor = currentBackground;
     }
 }
 
 function showNav(){
-    if(!(closeIcon.style.display === 'block'||openIcon.style.display === 'block'))return;
+    if(!(window.getComputedStyle(closeIcon).display === 'block'||window.getComputedStyle(openIcon).display === 'block'))return;
     icons.style.display = 'flex';
     closeIcon.style.display = 'block';
     openIcon.style.display = 'none';
     nav.style.backgroundColor = currentBackground;
     nav.style.height = "100%"
-    console.log(currentBackground);
 }
 
 function hideNav(){
-    if(!(closeIcon.style.display === 'block'||openIcon.style.display === 'block'))return;
+    if(!(window.getComputedStyle(closeIcon).display === 'block'||window.getComputedStyle(openIcon).display === 'block'))return;
     icons.style.display = 'none';
     nav.style.backgroundColor = 'transparent';
     if(closeIcon.style.display === 'none') return
